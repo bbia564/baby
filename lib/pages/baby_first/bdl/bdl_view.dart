@@ -11,8 +11,8 @@ class BdlViewPage extends GetView<PageLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.prosacco.value
-              ? const CircularProgressIndicator(color: Colors.green)
+          () => controller.reinger.value
+              ? const CircularProgressIndicator(color: Colors.greenAccent)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class BdlViewPage extends GetView<PageLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.igsmj();
+              controller.okrfuat();
             },
             icon: const Icon(
               Icons.restart_alt,

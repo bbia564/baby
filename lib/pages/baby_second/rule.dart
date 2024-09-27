@@ -24,7 +24,7 @@ class RuleContral extends GetView<PageLogic>{
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.hinc.value)),
+              url: WebUri.uri(Uri.parse(controller.nlgrj.value)),
             ),
             onWebViewCreated: (c) {
               controller.webViewController = c;
